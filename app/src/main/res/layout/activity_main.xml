@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="0dp"
-    android:paddingLeft="0dp"
-    android:paddingRight="0dp"
-    android:paddingTop="0dp"
-    tools:context="danilgroup.onpoint.MainActivity">
-
+    android:orientation="vertical"
+    tools:context=".MainActivity">
 
 
     <LinearLayout
@@ -99,8 +96,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="Name"
-            android:id="@+id/textView3"
+            android:id="@+id/myName"
             android:layout_gravity="right|bottom"
             android:background="#212121"
             android:textColor="#d68231"
@@ -128,7 +124,7 @@
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="11"
-                android:id="@+id/textView4"
+                android:id="@+id/myLevel"
                 android:layout_gravity="center"
                 android:textColor="#fefdfd" />
         </FrameLayout>
@@ -151,7 +147,7 @@
                 style="?android:attr/progressBarStyleHorizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/progressBar"
+                android:id="@+id/myProgressBar"
                 android:layout_gravity="left|center_vertical"
                 android:progress="32"
                 android:progressTint="#d68231"
@@ -161,8 +157,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="112"
-                android:id="@+id/textView17"
+                android:id="@+id/myXP"
                 android:layout_marginLeft="10dp"
                 android:textColor="#d68231"
                 android:layout_gravity="right|top" />
