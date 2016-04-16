@@ -9,6 +9,8 @@
     android:paddingTop="0dp"
     tools:context="danilgroup.onpoint.MainActivity">
 
+
+
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
@@ -112,7 +114,8 @@
         android:layout_height="80dp"
         android:layout_below="@+id/frameLayout"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true">
+        android:layout_alignParentStart="true"
+        android:id="@+id/frameLayout2">
 
         <FrameLayout
             android:layout_width="100dp"
@@ -134,7 +137,8 @@
             android:orientation="horizontal"
             android:layout_width="132dp"
             android:layout_height="77dp"
-            android:layout_gravity="left|top">
+            android:layout_gravity="left|top"
+            android:padding="10dp">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -150,7 +154,8 @@
                 android:id="@+id/progressBar"
                 android:layout_gravity="left|center_vertical"
                 android:progress="32"
-                android:progressTint="#d68231" />
+                android:progressTint="#d68231"
+                android:layout_marginTop="10dp" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -167,7 +172,8 @@
             android:orientation="horizontal"
             android:layout_width="132dp"
             android:layout_height="77dp"
-            android:layout_gravity="right|top" >
+            android:layout_gravity="right|top"
+            android:padding="10dp">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -193,7 +199,8 @@
                 android:id="@+id/button12"
                 android:layout_gravity="center"
                 android:background="#d68231"
-                android:textColor="#ffffff" />
+                android:textColor="#ffffff"
+                android:layout_marginTop="10dp" />
 
         </FrameLayout>
 
@@ -205,5 +212,68 @@
             android:background="#212121" />
 
     </FrameLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/frameLayout2"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/linearLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Награды"
+            android:id="@+id/textView20"
+            android:layout_gravity="center_horizontal" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"></LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Последний квест"
+            android:id="@+id/textView21"
+            android:layout_gravity="center_horizontal" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView2" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Крутой квест"
+                    android:id="@+id/textView22" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Это квест про то как вам стать самым крутым и ваще зачетным пацанчиком"
+                    android:id="@+id/textView23" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
 
 </RelativeLayout>
