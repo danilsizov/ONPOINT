@@ -144,9 +144,9 @@
                 android:id="@+id/textView16" />
 
             <ProgressBar
-                style="?android:attr/progressBarStyleHorizontal"
+                style="@android:style/Widget.ProgressBar.Horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="15dp"
                 android:id="@+id/myProgressBar"
                 android:layout_gravity="left|center_vertical"
                 android:progress="32"
@@ -189,13 +189,14 @@
 
             <Button
                 android:layout_width="match_parent"
-                android:layout_height="20dp"
+                android:layout_height="15dp"
                 android:text="Market"
                 android:id="@+id/button12"
                 android:layout_gravity="center"
                 android:background="#d68231"
                 android:textColor="#ffffff"
-                android:layout_marginTop="10dp" />
+                android:layout_marginTop="10dp"
+                android:textSize="15dp" />
 
         </FrameLayout>
 
@@ -228,7 +229,32 @@
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"></LinearLayout>
+            android:layout_gravity="center_horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView7"
+                android:background="@mipmap/imbest" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView8"
+                android:background="@mipmap/imbest" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView9"
+                android:background="@mipmap/imbest" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView10"
+                android:background="@mipmap/imbest" />
+        </LinearLayout>
 
         <TextView
             android:layout_width="wrap_content"
@@ -259,14 +285,14 @@
                     android:layout_height="wrap_content"
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:text="Крутой квест"
-                    android:id="@+id/textView22" />
+                    android:id="@+id/myNameOfQuest" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textAppearance="?android:attr/textAppearanceSmall"
                     android:text="Это квест про то как вам стать самым крутым и ваще зачетным пацанчиком"
-                    android:id="@+id/textView23" />
+                    android:id="@+id/myAboutText" />
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
